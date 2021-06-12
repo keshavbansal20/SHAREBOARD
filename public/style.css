@@ -1,0 +1,189 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+  }
+.tools-content{
+    height: 100px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.tools{
+    /* display: flex;
+    width: 80%;
+    background: white;
+    justify-content: space-evenly;
+    height: 80%;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175); */
+    display: flex;
+    width: 80%;
+    background:white;
+    justify-content: space-evenly;
+    border-radius: 13px solid black;
+    height: 80%;
+    align-items: center;
+    box-shadow:0 1rem 3rem rgb(142, 206, 206);
+
+}
+.tool{
+    height: 55px;
+    /* width: 100%; */
+    position: relative;
+    /* box-shadow: 0 0.5rem 2rem lightslategray; */
+}
+.active-tool{
+    /* background: lightgray;
+    border-radius: 100%;
+    padding: 10px;
+    height: 65px; */
+    padding: 10px;
+    height:65px;
+    border-radius: 100%;
+    background: lightsalmon;
+    box-shadow:0 1rem 2rem lightpink
+}
+#pencil{
+    background-color: lightcoral;
+    border-radius: 25%;
+}
+#eraser{
+    background-color: lightsalmon;
+    border-radius: 25%;
+}
+#sticky{
+    background-color: rgb(255, 253, 122);
+    border-radius: 5%;
+}
+.tool img {
+    height: 100%;
+  }
+.canvas{
+    height: calc(100vh-100px);
+}
+
+.tools-options{
+    /* border: 1px solid black; */
+    position: absolute;
+    height: 120px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgb(45, 82, 117);
+    border-radius: 15px;
+    top:71px;
+    left:-33px;
+}
+.hide{
+    display: none;
+}
+.pencil-colors{
+    /* height: 20px; */
+    /* width: 100px; */
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.pencil-colors div{
+    height: 30px;
+    width: 30px;
+    /* background-color: aquamarine; */
+    border-radius: 50%;
+}
+.red{
+    background-color:red;
+}
+.green{
+    background-color:green;
+}
+.blue{
+    background-color:blue;
+}
+.yellow{
+    background-color:yellow;
+}
+
+#canvas {
+    /* height:10%;
+      width:10%; 
+    background: red;
+    border:1px solid black; */
+  }
+
+  .sticky{
+
+    position:absolute;
+    
+    top: 200px;
+    
+    left: 300px;
+    
+    }
+       .sticky-header{
+    
+          
+          /* background: lightsteelblue;
+          height: 30px;
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+           */
+        background-color: lightslategray;
+        height: 30px;
+        border-top-left-radius:10px ;
+        border-top-right-radius: 10px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    
+    
+    
+    }
+      .minimize{
+    
+          
+          
+          
+          /* width: 20px;
+          margin-left: 5px;
+          height: 20px;
+    background: lightgreen;
+    border-radius: 10px; */
+        height:20px;
+        width:20px;
+        background-color:rgb(243, 239, 23);
+        border-radius: 20px;
+    }
+      .close{
+          /* height: 20px;
+    width: 20px;
+    background: red;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 10px; */
+        height: 20px;
+        width:20px;
+        background-color: red;
+        border-radius: 20px;
+        margin-right:5px;
+        margin-left:5px;
+          
+          
+    
+    
+    
+    }
+       .sticky-content{
+    
+      }
+      #sticky-text{
+        
+    outline: none;
+        
+    border: 1px solid lightgray;
+      }  
