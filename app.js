@@ -15,6 +15,9 @@ const io = require('socket.io')(http);
 // client ko public folder ka access
 app.use( express.static("public"));
 
+app.get("/", (req, res) => {
+    res.send(__dirname + "/index.html");
+})
 
 // on data consume 
 io.on('connection', function(socket){
